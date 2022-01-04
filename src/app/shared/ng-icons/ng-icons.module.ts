@@ -1,6 +1,14 @@
 import { NgModule } from '@angular/core'
 import { NgIconsModule } from '@ng-icons/core'
-import { HeroChevronDownSolid, HeroShoppingCart } from '@ng-icons/heroicons'
+import {
+  HeroChevronDownSolid,
+  HeroCollection,
+  HeroHeart,
+  HeroSearch,
+  HeroSearchCircle,
+  HeroShoppingCart,
+  HeroSpeakerphone,
+} from '@ng-icons/heroicons'
 import {
   IonLogoFacebook,
   IonLogoTwitter,
@@ -16,6 +24,11 @@ import {
       IonLogoYoutube,
       HeroShoppingCart,
       HeroChevronDownSolid,
+      HeroSearch,
+      HeroCollection,
+      HeroSearchCircle,
+      HeroSpeakerphone,
+      HeroHeart,
     }),
   ],
   exports: [NgIconsModule],

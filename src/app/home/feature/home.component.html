@@ -1,0 +1,88 @@
+<div class="relative w-full h-[48rem] overflow-hidden">
+  <img alt="Claro images"
+       class="w-full"
+       src="https://images.unsplash.com/photo-1523461811963-7f1023caeddd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1165&q=80">
+  <div class="top-0 absolute w-full h-full flex items-center justify-center bg-black bg-opacity-50">
+    <div>
+      <h2 class="text-7xl font-black text-white">Discover Great Images</h2>
+      <div class="mt-10 flex items-center justify-center">
+        <div class="w-full h-20 bg-white rounded-full flex items-center justify-between px-4">
+          <input class="h-12 flex-grow mx-4 text-2xl border-0 focus:outline-none focus:ring-0" placeholder="Search"
+                 type="text">
+          <div class="flex items-center flex-shrink-0">
+            <select
+              aria-label="Select search type"
+              class="form-select border-0 w-32 focus:outline-none focus:ring-primary px-4 py-2 rounded-3xl text-xl">
+              <option>Images</option>
+              <option>Photos</option>
+            </select>
+            <button class="p-4 text-primary">
+              <ng-icon name="hero-search" size="32"></ng-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container_ py-32">
+  <h3 class="text-4xl font-medium text-center">Experience a world of Flexibility & Convenience</h3>
+  <div class="mt-16">
+    <div class="grid grid-cols-3 gap-12">
+      <div class="flex flex-col items-center space-y-4">
+        <ng-icon class="text-primary" name="hero-search-circle" size="48"></ng-icon>
+        <h4 class="text-2xl font-medium">Search made simple</h4>
+        <p class="text-xl text-gray-700 text-center">Explore thousands of quality stock images</p>
+      </div>
+      <div class="flex flex-col items-center space-y-4">
+        <ng-icon class="text-primary" name="hero-collection" size="48"></ng-icon>
+        <h4 class="text-2xl font-medium">On Demand Subscriptions</h4>
+        <p class="text-xl text-gray-700 text-center">Flexible subscription plans tailored to your needs</p>
+      </div>
+      <div class="flex flex-col items-center space-y-4">
+        <ng-icon class="text-primary" name="hero-speakerphone" size="48"></ng-icon>
+        <h4 class="text-2xl font-medium">Be the first to know</h4>
+        <p class="text-xl text-gray-700 text-center">Register and receive the best offers, exclusives and more</p>
+      </div>
+    </div>
+  </div>
+  <div class="mt-16">
+    <div class="relative  my-16 py-8">
+      <hr>
+      <div class="absolute top-1 w-full flex items-center justify-center">
+        <div class="bg-white p-2 flex items-center space-x-4">
+          <button
+            class="inline-flex items-center justify-center px-4 py-2 border-2 border-transparent rounded-3xl shadow-sm text-base font-medium text-primary bg-gray-100">
+            Creative
+          </button>
+          <button
+            class="inline-flex items-center justify-center px-4 py-2 border-2 border-transparent rounded-3xl text-base font-medium text-gray-600 bg-white">
+            Editorial
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="grid grid-cols-3 gap-8">
+      <a *ngFor="let image of images" class="group relative h-72 block rounded-md overflow-hidden border"
+         routerLink="/">
+        <img [alt]="image.title" [src]="image.thumbnail" class="w-full h-full">
+        <div
+          class="absolute w-full bottom-0 p-4 bg-black bg-opacity-80 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+          <div class="flex items-center justify-between text-white">
+            <span class="uppercase font-bold tracking-wide text-sm">{{image.title}}</span>
+            <div class="flex items-center space-x-1">
+              <ng-icon name="hero-heart"></ng-icon>
+              <span>{{image.likes}}k</span>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="mt-16 text-center">
+      <button
+        class="inline-flex items-center justify-center px-4 py-2 border-2 border-transparent rounded-3xl shadow-sm text-base font-medium text-white bg-primary">
+        Discover more
+      </button>
+    </div>
+  </div>
+</div>
