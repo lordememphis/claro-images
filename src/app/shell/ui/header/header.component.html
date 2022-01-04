@@ -1,0 +1,36 @@
+<header class="fixed top-0 w-full z-50 bg-white">
+  <nav
+    class="relative h-20 flex items-center justify-center transition-shadow lg:max-w-screen-lg lg:mx-auto lg:justify-end xl:max-w-screen-xl">
+    <div class="flex items-center justify-between">
+      <div class="absolute z-10 left-6 flex items-center space-x-4">
+        <h1 class="text-4xl font-black">claro<span class="text-primary font-light tracking-tight">images</span></h1>
+        <ul class="flex">
+          <li class="py-4 px-3">
+            <a class="font-medium" routerLink="/">
+              <div class="flex items-end text-gray-700">
+                <span>Explore</span>
+                <ng-icon class="text-primary" name="hero-chevron-down-solid" size="20"></ng-icon>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="flex">
+        <ul class="px-6 space-x-3 flex items-center">
+          <li>
+            <a
+              class="w-full flex items-center justify-center px-4 py-2 border-2 border-transparent rounded-3xl shadow-sm text-base font-medium text-white bg-primary"
+              routerLink="/">
+              Sign up
+            </a>
+          </li>
+          <li class="py-4 px-3"><a class="text-gray-700 font-medium" routerLink="/"><span>Log in</span></a></li>
+          <li class="py-4 px-3"><a class="text-gray-700 font-medium" routerLink="/"><span>Pricing</span></a></li>
+          <li class="py-4 px-3"><a class="text-gray-700 font-medium" routerLink="/">
+            <ng-icon name="hero-shopping-cart" size="32"></ng-icon>
+          </a></li>
+        </ul>
+      </ul>
+    </div>
+  </nav>
+</header>
