@@ -1,23 +1,25 @@
-<div class="relative w-full h-[48rem] overflow-hidden">
+<div class="relative w-full h-96 overflow-hidden md:h-[36rem] lg:h-[48rem]">
   <img alt="Claro images"
-       class="w-full"
-       src="https://images.unsplash.com/photo-1523461811963-7f1023caeddd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1165&q=80">
+       class="w-full h-full object-cover"
+       src="assets/img/img9.jpg">
   <div class="top-0 absolute w-full h-full flex items-center justify-center bg-black bg-opacity-50">
     <div>
-      <h2 class="text-7xl font-black text-white">Discover Great Images</h2>
+      <h2 class="text-3xl text-center font-black text-white md:text-5xl lg:text-7xl">Discover Great Images</h2>
       <div class="mt-10 flex items-center justify-center">
-        <div class="w-full h-20 bg-white rounded-full flex items-center justify-between px-4">
-          <input class="h-12 flex-grow mx-4 text-2xl border-0 focus:outline-none focus:ring-0" placeholder="Search"
-                 type="text">
+        <div class="w-80 h-10 px-2 bg-white rounded-full flex items-center justify-between md:px-4 md:w-full md:h-20">
+          <input
+            class="h-6 w-36 mx-2 border-0 focus:outline-none focus:ring-0 md:w-full md:flex-grow md:h-12 md:mx-4 md:text-2xl"
+            placeholder="Search"
+            type="text">
           <div class="flex items-center flex-shrink-0">
             <select
               aria-label="Select search type"
-              class="form-select border-0 w-32 focus:outline-none focus:ring-primary px-4 py-2 rounded-3xl text-xl">
+              class="form-select border-0 text-sm py-1 rounded-3xl focus:outline-none focus:ring-primary md:px-4 md:py-2 md:w-32 md:text-xl">
               <option>Images</option>
               <option>Photos</option>
             </select>
-            <button class="p-4 text-primary">
-              <ng-icon name="hero-search" size="32"></ng-icon>
+            <button class="p-4 text-primary mt-2">
+              <ng-icon [size]="searchIconSize" name="hero-search"></ng-icon>
             </button>
           </div>
         </div>
@@ -25,24 +27,24 @@
     </div>
   </div>
 </div>
-<div class="container_ py-32">
-  <h3 class="text-4xl font-medium text-center">Experience a world of Flexibility & Convenience</h3>
+<div class="container_ py-32 px-6 md:px-8">
+  <h3 class="text-2xl font-medium text-center md:text-4xl">Experience a world of Flexibility & Convenience</h3>
   <div class="mt-16">
-    <div class="grid grid-cols-3 gap-12">
+    <div class="grid gap-12 md:grid-cols-3">
       <div class="flex flex-col items-center space-y-4">
         <ng-icon class="text-primary" name="hero-search-circle" size="48"></ng-icon>
-        <h4 class="text-2xl font-medium">Search made simple</h4>
-        <p class="text-xl text-gray-700 text-center">Explore thousands of quality stock images</p>
+        <h4 class="text-lg text-center font-medium lg:text-2xl">Search made simple</h4>
+        <p class="text-gray-700 text-center lg:text-xl">Explore thousands of quality stock images</p>
       </div>
       <div class="flex flex-col items-center space-y-4">
         <ng-icon class="text-primary" name="hero-collection" size="48"></ng-icon>
-        <h4 class="text-2xl font-medium">On Demand Subscriptions</h4>
-        <p class="text-xl text-gray-700 text-center">Flexible subscription plans tailored to your needs</p>
+        <h4 class="text-lg text-center font-medium lg:text-2xl">On Demand Subscriptions</h4>
+        <p class="text-gray-700 text-center lg:text-xl">Flexible subscription plans tailored to your needs</p>
       </div>
       <div class="flex flex-col items-center space-y-4">
         <ng-icon class="text-primary" name="hero-speakerphone" size="48"></ng-icon>
-        <h4 class="text-2xl font-medium">Be the first to know</h4>
-        <p class="text-xl text-gray-700 text-center">Register and receive the best offers, exclusives and more</p>
+        <h4 class="text-lg text-center font-medium lg:text-2xl">Be the first to know</h4>
+        <p class="text-gray-700 text-center lg:text-xl">Register and receive the best offers, exclusives and more</p>
       </div>
     </div>
   </div>
@@ -62,10 +64,10 @@
         </div>
       </div>
     </div>
-    <div class="grid grid-cols-3 gap-8">
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
       <a *ngFor="let image of images" class="group relative h-72 block rounded-md overflow-hidden border"
          routerLink="/">
-        <img [alt]="image.title" [src]="image.thumbnail" class="w-full h-full">
+        <img [alt]="image.title" [src]="image.thumbnail" class="w-full h-full object-cover">
         <div
           class="absolute w-full bottom-0 p-4 bg-black bg-opacity-80 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
           <div class="flex items-center justify-between text-white">

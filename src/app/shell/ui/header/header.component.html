@@ -1,10 +1,11 @@
-<header class="fixed top-0 w-full z-50 bg-white">
+<header [ngClass]="{'bg-transparent': !floatNav, 'shadow-lg bg-white': floatNav}" class="fixed top-0 w-full z-50">
   <nav
     class="relative h-20 flex items-center justify-center transition-shadow lg:max-w-screen-lg lg:mx-auto lg:justify-end xl:max-w-screen-xl">
     <div class="flex items-center justify-between">
       <div class="absolute z-10 left-6 flex items-center space-x-4">
-        <h1 class="text-4xl font-black">claro<span class="text-primary font-light tracking-tight">images</span></h1>
-        <ul class="flex">
+        <h1 class="text-2xl md:text-4xl font-black">claro<span
+          class="text-primary font-light tracking-tight">images</span></h1>
+        <ul class="hidden lg:flex">
           <li class="py-4 px-3">
             <a class="font-medium" routerLink="/">
               <div class="flex items-end text-gray-700">
@@ -15,7 +16,7 @@
           </li>
         </ul>
       </div>
-      <ul class="flex">
+      <ul class="hidden lg:flex">
         <ul class="px-6 space-x-3 flex items-center">
           <li>
             <a
@@ -30,6 +31,48 @@
             <ng-icon name="hero-shopping-cart" size="32"></ng-icon>
           </a></li>
         </ul>
+      </ul>
+      <button (click)="mobileMenuOpen=!mobileMenuOpen"
+              class="absolute z-10 right-6 flex items-center justify-center focus:outline-none lg:hidden">
+        <div *ngIf="!mobileMenuOpen">
+          <h3 class="sr-only">Open menu</h3>
+          <ng-icon name="hero-menu-alt-2" size="28"></ng-icon>
+        </div>
+        <div *ngIf="mobileMenuOpen">
+          <h3 class="sr-only">Close menu</h3>
+          <ng-icon name="hero-x" size="28"></ng-icon>
+        </div>
+      </button>
+    </div>
+    <div *ngIf="mobileMenuOpen" [@slideInLeftOnEnter]="true" [@slideOutLeftOnLeave]="true"
+         class="absolute inset-0 min-h-screen bg-gray-50">
+      <ul class="w-full mt-20 font-medium">
+        <li class="py-4 px-6">
+          <a (click)="mobileMenuOpen=false" class="flex items-center space-x-3" routerLink="/">
+            <span>Log in</span>
+          </a>
+        </li>
+        <li class="py-4 px-6">
+          <a (click)="mobileMenuOpen=false" class="flex items-center space-x-3" routerLink="/">
+            <span>Pricing</span>
+          </a>
+        </li>
+        <li class="py-4 px-6">
+          <a (click)="mobileMenuOpen=false" class="flex items-center space-x-3" routerLink="/">
+            <ng-icon name="hero-shopping-cart" size="32"></ng-icon>
+          </a>
+        </li>
+        <li class="mt-8">
+          <ul class="flex flex-col space-y-4 sm:flex-row sm:space-y-0">
+            <li class="px-6 sm:flex-1">
+              <a
+                class="w-full flex items-center justify-center px-4 py-2 border-2 border-transparent rounded-3xl shadow-sm text-base font-medium text-white bg-primary"
+                routerLink="/">
+                Sign up
+              </a>
+            </li>
+          </ul>
+        </li>
       </ul>
     </div>
   </nav>

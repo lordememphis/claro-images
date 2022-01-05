@@ -4,10 +4,12 @@ import {
   HeroChevronDownSolid,
   HeroCollection,
   HeroHeart,
+  HeroMenuAlt2,
   HeroSearch,
   HeroSearchCircle,
   HeroShoppingCart,
   HeroSpeakerphone,
+  HeroX,
 } from '@ng-icons/heroicons'
 import {
   IonLogoFacebook,
@@ -29,6 +31,8 @@ import {
       HeroSearchCircle,
       HeroSpeakerphone,
       HeroHeart,
+      HeroX,
+      HeroMenuAlt2,
     }),
   ],
   exports: [NgIconsModule],

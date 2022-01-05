@@ -1,47 +1,47 @@
 [
   {
     "title": "aute adipisicing",
-    "thumbnail": "https://images.unsplash.com/photo-1622017634176-8da750043c54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDN8fGltYWdlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    "thumbnail": "assets/img/img1.jpg",
     "likes": 21
   },
   {
     "title": "elit",
-    "thumbnail": "https://images.unsplash.com/photo-1502613374390-8da7aa532177?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "thumbnail": "assets/img/img2.png",
     "likes": 24
   },
   {
     "title": "quis",
-    "thumbnail": "https://images.unsplash.com/photo-1620403724141-2b250fd48f63?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGltYWdlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    "thumbnail": "assets/img/img3.jpg",
     "likes": 38
   },
   {
     "title": "anim labore",
-    "thumbnail": "https://images.unsplash.com/photo-1613940779518-f55261b1023c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGltYWdlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    "thumbnail": "assets/img/img4.png",
     "likes": 13
   },
   {
     "title": "incididunt",
-    "thumbnail": "https://images.unsplash.com/photo-1552611052-dd922d8f9603?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGltYWdlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    "thumbnail": "assets/img/img5.jpg",
     "likes": 10
   },
   {
     "title": "cupidatat",
-    "thumbnail": "https://images.unsplash.com/photo-1620403724141-2b250fd48f63?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGltYWdlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    "thumbnail": "assets/img/img6.jpg",
     "likes": 47
   },
   {
     "title": "anim nisi",
-    "thumbnail": "https://images.unsplash.com/photo-1622017634176-8da750043c54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDN8fGltYWdlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    "thumbnail": "assets/img/img7.jpg",
     "likes": 27
   },
   {
     "title": "laboris consequat",
-    "thumbnail": "https://images.unsplash.com/photo-1552611052-dd922d8f9603?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGltYWdlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    "thumbnail": "assets/img/img8.png",
     "likes": 22
   },
   {
     "title": "exercitation cupidatat",
-    "thumbnail": "https://images.unsplash.com/photo-1502613374390-8da7aa532177?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "thumbnail": "assets/img/img9.jpg",
     "likes": 35
   }
 ]
